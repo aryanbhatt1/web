@@ -1,0 +1,265 @@
+/* HTML ELEMENTS -------------------------------------------------------------- */
+html {
+  position: relative;
+  height: 100%;
+}
+body{
+  height:100vh;
+}
+h1{
+  margin-top:3rem;
+}
+
+li{
+  list-style-type: none;
+}
+
+/* Classes --------------------------------------------------------------------- */
+
+.entire{
+  min-height:100%;
+  display:grid;
+  grid-template-rows: 1fr auto;
+}
+/* Background for the home page */
+.background{
+    /* Background */
+   background-image: url("background.jpg");
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   background-color: #464646;
+
+   /* text color */
+   color:#fff;
+}
+
+
+/* About page first section */
+.about-section{
+  background-color:#fff;
+  text-align:center;
+}
+
+/* picture in the about page */
+.guy-picture{
+  width:90%
+}
+
+/* title in the home page */
+.title{
+  position:absolute;
+  transform: translate(-50%, -50%);
+  top:50%;
+  left:50%;
+  text-align:center;
+  color:#fff;
+}
+
+/* Developer title */
+.welcome{
+  background-color:black;
+  opacity:60%;
+  border-radius: 6%;
+}
+
+
+/* footer for home page */
+.home-footer{
+  position:absolute;
+  bottom:2%;
+  right:2%;
+  width:7rem;
+}
+
+.link-icons{
+  color:#fff;
+  padding:0 6%;
+}
+
+
+
+/* Navigation Bar items */
+.nav-item{
+  padding:0 0.5rem;
+  color:#fff;
+}
+
+/* entire navigation bar */
+.navbar {
+  padding: 0.5rem 4rem;
+}
+
+/* about page footer */
+
+
+/* footer */
+
+.footer {
+  /* position: absolute;
+  bottom: 0;
+  width: 100%;
+  margin-top:2rem; */
+  height: 5rem;
+  background-color:#6f9a8d;
+  grid-row-start:2;
+  grid-row-end:3;
+}
+
+.icons-temp{
+  padding-top:1rem;
+}
+
+
+/* #page-container {
+  position: relative;
+  min-height: 100vh;
+} */
+
+.iconsl{
+  padding:0 0.3rem;
+}
+
+.icons-about{
+  position:absolute;
+  bottom:0;
+}
+
+
+.container{
+  padding-bottom: 2rem;
+}
+
+.skillset{
+  margin-top:10rem;
+  text-align:center;
+  padding: 0 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+/* animations and svg */
+
+#logo{
+  /* position:absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%); */
+  color:grey;
+  width: 80%;
+  background-color:black;
+  opacity:60%;
+  border-radius: 10px;
+  padding:10px;
+  margin-bottom: 1rem;
+}
+
+#logo path:nth-child(1){
+ stroke-dasharray:545.7px;
+ stroke-dashoffset:545.7;
+ animation:line-anim 2s ease forwards;
+}
+
+#logo path:nth-child(2){
+  stroke-dasharray:458.5px;
+  stroke-dashoffset:458.5;
+   animation:line-anim 2s ease forwards 0.3s;
+}
+
+#logo path:nth-child(3){
+  stroke-dasharray:423px;
+  stroke-dashoffset:423;
+   animation:line-anim 2s ease forwards 0.6s;
+}
+
+#logo path:nth-child(4){
+  stroke-dasharray:458.7px;
+  stroke-dashoffset:458.7;
+   animation:line-anim 2s ease forwards 0.9s;
+}
+
+#logo path:nth-child(5){
+  stroke-dasharray:302px;
+  stroke-dashoffset:302;
+   animation:line-anim 2s ease forwards 1.2s;
+}
+
+#logo path:nth-child(6){
+  stroke-dasharray:526.9px;
+  stroke-dashoffset:526.9;
+   animation:line-anim 2s ease forwards 1.5s;
+}
+
+#logo path:nth-child(7){
+  stroke-dasharray:418.4px;
+  stroke-dashoffset:418.4;
+   animation:line-anim 2s ease forwards 1.8s;
+}
+
+#logo path:nth-child(8){
+  stroke-dasharray:458.5px;
+  stroke-dashoffset:458.5;
+   animation:line-anim 2s ease forwards 2.1s;
+}
+
+#logo path:nth-child(9){
+  stroke-dasharray:515.9px;
+  stroke-dashoffset:515.9;
+   animation:line-anim 2s ease forwards 2.4s;
+}
+
+@keyframes line-anim{
+  to{
+    stroke-dashoffset:0;
+  }
+}
+
+
+/* skills page */
+.block{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:20px;
+  padding:20px;
+  grid-template-areas:'imageone textone' 'imagetwo texttwo' 'imagethree textthree';
+  text-align:center;
+  margin-top:3rem;
+  justify-content: center;
+}
+
+
+
+.element{
+  background-color:brown;
+}
+
+.element:nth-child(even){
+  background-color:green;
+}
+
+
+
+ @media  screen and (max-width:800px){
+   .block{grid-template-columns: 1fr;
+   grid-template-areas:'imageone' 'textone' 'imagetwo' 'texttwo' 'imagethree' 'textthree';
+ }}
+
+ .wrapper{
+   margin-top:40px;
+   padding:0 20px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-auto-rows: 100px;
+   justify-items:center;
+   align-items: center;
+   text-align:center;
+
+ }
