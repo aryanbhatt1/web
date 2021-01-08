@@ -3,24 +3,9 @@ html {
   position: relative;
   height: 100%;
 }
-#loading{
-  width: 100%;
-  height: 100vh;
-  background:white url('http://garudapr.in/wp-content/uploads/2017/12/loader.gif') 
-  no-repeat center center;
-  z-index: 99999;
-}
+
 body{
   height:100vh;
-  background-image: url(background.jpg);
-  background-position: center center;
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-   background-size: cover;
-   background-color: #464646;
-   /* text color */
-   color:#fff;
-
 }
 h1{
   margin-top:3rem;
@@ -40,6 +25,7 @@ li{
 /* Background for the home page */
 .background{
     /* Background */
+  background-image: url(background.jpg);
    background-position: center center;
    background-repeat: no-repeat;
    background-attachment: fixed;
