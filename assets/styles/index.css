@@ -14,9 +14,7 @@ h1{
 li{
   list-style-type: none;
 }
-
 /* Classes --------------------------------------------------------------------- */
-
 .entire{
   min-height:100%;
   display:grid;
@@ -137,15 +135,6 @@ li{
   text-align:center;
   padding: 0 2rem;
 }
-
-
-
-
-
-
-
-
-
 
 /* animations and svg */
 

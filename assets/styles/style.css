@@ -1,10 +1,4 @@
 /* ------------------------------------------------
- Author: ArtStyles (Art)
- 
- Template Name: vCard 2
- version: 1.1.0
------------------------------------------------- */
-/* ------------------------------------------------
 
  - General Styles
  - Typography
@@ -36,6 +30,7 @@
 @import url(../icons/style.css);
 @import url("../font/inter.css");
 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,900&amp;display=swap");
+
 /* -----------------------------------------------------------------
     - General Styles
 ----------------------------------------------------------------- */
@@ -2654,4 +2649,3 @@ button:focus {
   overflow: auto;
 }
 
-/*# sourceMappingURL=style.css.map */
