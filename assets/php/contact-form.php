@@ -9,7 +9,7 @@ if (isset($_REQUEST['name'],$_REQUEST['email'])) {
     $to = 'aryanbhatt1002@gmail.com';
 
     $subject = 'Contact Request From Website';
-    $headers = "From: ".$name." <".$email."> \r\n";
+    $headers = $name." <".$email."> \r\n";
 
     $send_email = mail($to,$subject,$message,$headers);
 
