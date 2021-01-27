@@ -5,7 +5,6 @@ if (isset($_REQUEST['name'],$_REQUEST['email'])) {
     $email = $_REQUEST['email'];
     $message = $_REQUEST['message'];
 
-    // Set your email address where you want to receive emails.
     $to = 'aryanbhatt1002@gmail.com';
 
     $subject = 'Contact Request From Website';
@@ -14,6 +13,5 @@ if (isset($_REQUEST['name'],$_REQUEST['email'])) {
     $send_email = mail($to,$subject,$message,$headers);
 
     echo ($send_email) ? 'success' : 'error';
-
 }
 ?>
