@@ -1,3 +1,25 @@
+/*
+1.  Detect Device Mobile
+2.  Loaded
+3.  Hamburger
+4.  Carousel
+5.  Sticky sidebar
+6.  Progress bar
+7.  ScrollTo
+8.  Style background image
+9.  Equal heights
+10. Tooltip
+11. Switch categories & Filter mobile
+12. Anchor scroll
+13. Tabs
+14. Masonry
+15. hover effect button
+16. emoji add in textarea
+17. mediumZoom
+18. Lazyload
+19. Polyfill object-fit
+20. Contacts form
+*/
 $(document).ready(function() {
 
     'use strict';
@@ -26,12 +48,12 @@ $(document).ready(function() {
         opacity: 1,
         delay: 0,
         complete: function(anim) {
-            progressBar(); //Init progress bar
+            progressBar();
         }
     });
     
     $('body, .js-img-load').imagesLoaded({ background: !0 }).always( function( instance ) {
-	    preloader(); //Init preloader
+	    preloader();
     });
 
     function preloader() {
@@ -147,9 +169,6 @@ $(document).ready(function() {
         $('.sticky-column').trigger("sticky_kit:detach");
     };
 
-    //  stop sticky kit
-    //  based on your window width
-
     var screen = 992;
 
     var windowHeight, windowWidth;
@@ -243,7 +262,7 @@ $(document).ready(function() {
         });
     }
 	
-	scrollToTop(); //Init
+	scrollToTop();
 
 
     /*-----------------------------------------------------------------
