@@ -20,6 +20,7 @@
 19. Polyfill object-fit
 20. Contacts form
 */
+
 $(document).ready(function() {
 
     'use strict';
