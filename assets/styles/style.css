@@ -22,7 +22,7 @@
  - Testimonials
  - Timeline
  - Other
- 
+
 ------------------------------------------------ */
 @import url(vendors/bootstrap.min.css);
 @import url(vendors/swiper.min.css);
@@ -105,7 +105,7 @@ html.is-scroll-disabled body {
 }
 
 .bg-triangles {
-  background-image: url(triangle-top.png), url(triangle-bottom.png);
+  background-image: url(../images/triangle-top.png), url(../images/triangle-bottom.png);
   background-position: right top, left bottom;
   background-repeat: no-repeat;
   background-size: inherit;
@@ -117,7 +117,7 @@ html.is-scroll-disabled body {
   }
 }
 .bg-triangles-2 {
-  background-image: url(triangles-top-2.png), url(triangles-bottom-2.png);
+  background-image: url(../images/triangles-top-2.png), url(../images/triangles-bottom-2.png);
   background-position: left top, right bottom;
   background-repeat: no-repeat;
   background-size: inherit;
@@ -1399,7 +1399,7 @@ button:focus {
 }
 .nav::before {
   content: '';
-  background-image: url(nav-edge.png);
+  background-image: url(../images/nav-edge.png);
   height: 100%;
   position: absolute;
   top: 0;
@@ -1588,7 +1588,7 @@ button:focus {
 }
 
 #marker {
-  background-image: url(icon-map-pic.png);
+  background-image: url(../images/icon-map-pic.png);
   background-size: cover;
   width: 3.125rem;
   height: 3.125rem;
@@ -1865,7 +1865,7 @@ button:focus {
 }
 .news-item__image-wrap::after {
   content: '';
-  background-image: url(icon-news.png);
+  background-image: url(../images/icon-news.png);
   height: 2.5rem;
   margin: auto;
   opacity: 0;
