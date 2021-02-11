@@ -124,6 +124,8 @@ li{
     -webkit-transform: translateX(-100%);
     -ms-transform: translateX(-100%);
     transform: translateX(-100%);
+    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
+    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1.000);
 }
 .loaded #loader-wrapper .loader-section.section-right {
     -webkit-transform: translateX(100%);
@@ -163,9 +165,7 @@ li{
     text-align:center;
     color:#fff;
 }
-.text-lwhite{
-    color: #8d8585;
-}
+
 /* Welcome title */
 .welcome{
     background-color:black;
@@ -197,7 +197,7 @@ li{
 }
 .footer {
     height: 5rem;
-    background-color: #e1efed;
+    background-color:#6f9a8d;
     grid-row-start:2;
     grid-row-end:3;
 }
