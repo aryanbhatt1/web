@@ -25,6 +25,12 @@ li{
     background-color: #464646;
     color:#fff;
 }
+#click {
+    background-color: rgba(10, 9, 9, 0.7);
+}
+#click:hover{
+    background-color: white;
+}
 /* Preloader */
 #loader-wrapper {
     position: fixed;
