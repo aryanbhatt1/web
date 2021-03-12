@@ -25,10 +25,10 @@ li{
     background-color: #464646;
     color:#fff;
 }
-#click {
+#clickable {
     background-color: rgba(10, 9, 9, 0.7);
 }
-#click:hover{
+#clickable:hover{
     background-color: white;
 }
 /* Preloader */
