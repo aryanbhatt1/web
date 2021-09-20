@@ -474,6 +474,8 @@ $(document).ready(function() {
       Contacts form
     -------------------------------------------------------------------*/
 
+
+
     $("#contact-form").validator().on("submit", function (event) {
         if (event.isDefaultPrevented()) {
             formError();
@@ -489,27 +491,19 @@ $(document).ready(function() {
             email = $("#emailContact").val(),
             message = $("#messageContact").val();
 
-        var url = "../assets/php/contact-form.php";
+        var url = "https://formspree.io/f/xnqlwbdy";
 
         $.ajax({
             type: "POST",
             url: url,
-            data: "name=" + name + "&email=" + email + "&message=" + message,
-            success : function(text){
-                if (text == "success"){
-                    formSuccess();
-                } else {
-                    formError();
-                    submitMSG(false,text);
-                }
-            }
-        });
-    }
+            data: "name=" + name + "&email=" + email + "&message=" + message
 
-    function formSuccess(){
+        });
         $("#contact-form")[0].reset();
         submitMSG(true, "Thanks! Your message has been sent.");
     }
+
+
 
     function formError(){
         $("#contactForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function(){
