@@ -17,7 +17,7 @@ li{
 
 /* Background */
 .background{
-    background-image: url(../images/background.jpg);
+    background-image: url(../images/wallpaper.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -198,9 +198,6 @@ li{
     color:#fff;
 }
 /* entire navigation bar */
-.navbar {
-    padding: 0.5rem 4rem;
-}
 .footer {
     height: 5rem;
     background-color:#6f9a8d;
